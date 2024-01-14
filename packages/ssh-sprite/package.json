@@ -1,0 +1,46 @@
+{
+  "name": "@produck/ssh-sprite",
+  "version": "0.0.0",
+  "description": "Agent for operating ssh.",
+  "files": [
+    "src",
+    "tsconfig.json"
+  ],
+  "types": "src/index.d.ts",
+  "main": "src/index.cjs",
+  "type": "module",
+  "exports": {
+    "import": "./src/index.mjs",
+    "require": "./src/index.cjs"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c script/rollup.config.mjs",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/produck/ssh-sprite.git"
+  },
+  "keywords": [
+    "ssh",
+    "sftp"
+  ],
+  "author": "ChaosLee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/produck/ssh-sprite/issues"
+  },
+  "homepage": "https://github.com/produck/ssh-sprite#readme",
+  "dependencies": {
+    "ssh2": "^1.15.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "^20.11.0",
+    "mocha": "^10.2.0",
+    "rollup": "^4.9.5"
+  }
+}
