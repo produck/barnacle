@@ -1,5 +1,5 @@
 {
-  "name": "@produck/ssh-sprite",
+  "name": "@produck/pagurian-ssh-sprite",
   "version": "0.0.0",
   "description": "Agent for operating ssh.",
   "files": [
