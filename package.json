@@ -1,5 +1,5 @@
 {
-	"name": "@produck/pagurian-workspace",
+	"name": "@produck/barnacle-workspace",
 	"private": true,
 	"scripts": {
 		"deps:install": "npm -v && npm install",
